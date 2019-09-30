@@ -36,6 +36,7 @@ public class NoteCMD implements CommandExecutor {
         else if (args[0].equals("clear")) {
             Note note = new Note(pl, player);
             note.wipeNotes();
+            player.sendMessage(prefix + ChatColor.translateAlternateColorCodes('&', " &fYour notes have been cleared successfully!"));
         }
         else if (args.length >= 2) {
             if (args[0].equals("add")) {
@@ -51,9 +52,11 @@ public class NoteCMD implements CommandExecutor {
                 Note note = new Note(pl, player);
                 try {
                     note.removeNote(Integer.parseInt(args[1]));
+                    player.sendMessage(prefix + ChatColor.translateAlternateColorCodes('&', " &fThe note has been removed successfully!"));
                 } catch(NumberFormatException e) {
                     player.sendMessage(prefix + ChatColor.translateAlternateColorCodes('&', " &f/note remove <number>"));
                 }
+
 
             }
         }

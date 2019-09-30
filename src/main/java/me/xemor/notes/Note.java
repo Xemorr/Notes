@@ -28,7 +28,7 @@ public class Note {
         else {
             notes = "";
             for (int i = 0; i < parseNotes().length; i++) {
-                notes += (i + 1) + ": " + parseNotes()[i] + "\n";
+                notes += "&r&f" + (i + 1) + ": " + parseNotes()[i] + "\n";
             }
         }
         return ChatColor.translateAlternateColorCodes('&', notes);
