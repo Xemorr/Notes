@@ -1,0 +1,13 @@
+notes:
+  bdea3203c062461693c0e18028129ee9: "the default note for Xemor :)"
+prefix: "&8&l[&e&lNotes&8&l] "
+language:
+  mustBePlayer: "You must be a player!"
+  clearedNotes: "&fYour notes have been cleared successfully!"
+  addedNote: "&fNote has been added successfully!"
+  removedNote: "&fThe note has been removed successfully!"
+  noteUsage: "&f/note"
+  addUsage: "&f/note add <text>"
+  clearUsage: "&f/note clear"
+  removeUsage: "&f/note remove <number>"
+  noteFormat: "&r&f%number%: %note%\n"

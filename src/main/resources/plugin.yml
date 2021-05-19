@@ -1,0 +1,16 @@
+name: Notes
+version: ${project.version}
+main: me.xemor.notes.Notes
+api-version: 1.15
+authors: [Xemor]
+description: a plugin that allows you to save notes that you can read later.
+commands:
+  note:
+    description: The main command of the Notes plugin, used to read and create notes.
+    usage: /note create <text>
+    aliases: notes
+    permission: note.notes
+permissions:
+  note.notes:
+    default: true
+    description: Allows you to use /note and all its subcommands
